@@ -59,7 +59,7 @@ const BiologyChatbot = () => {
     }).format(date);
   };
 
-  const API_KEY = 'AIzaSyCozJFIozTZH0yufE159GsOnHW-RBZstz0'; // ← Substitua aqui!
+  const API_KEY = 'AIzaSyCozJFIozTZH0yufE159GsOnHW-RBZstz0';
 
   const handleSendMessage = async () => {
     if (!userInput.trim()) return;
@@ -274,7 +274,7 @@ const BiologyChatbot = () => {
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
             onKeyPress={handleKeyPress}
-            placeholder="Faça uma pergunta sobre biologia..."
+            placeholder="Faça uma pergunta"
             disabled={isLoading}
           />
           <button 
